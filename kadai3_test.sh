@@ -110,7 +110,7 @@ kadai-c() {
         make bb > /dev/null 2>&1
 
         if [ ! -f bb ]; then
-            warn "kadai-c: Failed to generate the binary(bb) with '$ make measure'"
+            warn "kadai-c: Failed to generate the binary(bb) with '$ make bb'"
         fi
 
         if [ `./bb | wc -l` -ne 10000 ]; then
