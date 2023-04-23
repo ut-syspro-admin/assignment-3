@@ -28,7 +28,7 @@ kadai-a() {
         make unsafe_btree > /dev/null 2>&1
 
         if [ ! -f unsafe_btree ]; then
-            warn "kadai-a: Failed to generate the binary(unsafe_btree) with '$ make measure'"
+            warn "kadai-a: Failed to generate the binary(unsafe_btree) with '$ make unsafe_btree'"
         fi
 
         if [ `./unsafe_btree | wc -l` -ge 10000 ]; then
@@ -66,20 +66,20 @@ kadai-b() {
             warn "kadai-b: Missing Makefile"
         fi
 
-        make unsafe_btree > /dev/null 2>&1
+        make safe_btree > /dev/null 2>&1
 
-        if [ ! -f unsafe_btree ]; then
-            warn "kadai-b: Failed to generate the binary(unsafe_btree) with '$ make measure'"
+        if [ ! -f safe_btree ]; then
+            warn "kadai-b: Failed to generate the binary(safe_btree) with '$ make safe_btree'"
         fi
 
-        if [ `./unsafe_btree | wc -l` -ne 10000 ]; then
+        if [ `./safe_btree | wc -l` -ne 10000 ]; then
             warn "kadai-b: Nodes were lost"
         fi
 
         make clean > /dev/null 2>&1
 
-        if [ -f unsafe_btree ]; then
-            warn "kadai-b: Failed to remove the binary(unsafe_btree) with '$ make clean'."
+        if [ -f safe_btree ]; then
+            warn "kadai-b: Failed to remove the binary(safe_btree) with '$ make clean'."
         fi
 
         if [ ! -z "`find . -name \*.o`" ]; then
