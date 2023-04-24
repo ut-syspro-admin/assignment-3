@@ -11,7 +11,7 @@ Multi-thread.
 
 ## Assignment
 
-- Slide: [here]() (ECCS email required) 
+- Slide: [here](https://docs.google.com/presentation/d/1O9c8U0DEAinc3Ck7Igl-TFGvqLhVeBk5uszw7CD1vM0/edit?usp=sharing) (ECCS email required) 
 - Date assigned: ***2023/04/24***
 - Date due: ***2023/05/08*** (tentative)
 
