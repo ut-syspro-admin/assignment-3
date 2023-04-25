@@ -1,7 +1,7 @@
 # Customized for kadai 3
-# kadai-a
-# kadai-b
-# kadai-c
+kadai-a/unsafe_btree
+kadai-b/safe_btree
+kadai-c/bb
 # kadai-d
 
 # Created by https://www.toptal.com/developers/gitignore/api/c
